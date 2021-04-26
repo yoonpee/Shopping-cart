@@ -1,0 +1,22 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+.header{width: 100%; height: 120px; background-color: #ddd;position: relative;}
+.header h1{position: absolute; left:30px; top:50%; transform: translateY(-50%); font-size: 30px;}
+.header ul{position: absolute; right:10px; top:50%; transform: translateY(-50%); overflow: hidden;}
+.header ul li{float: left; margin:20px; list-style: none;}
+.header ul li a{text-decoration: none; color:#111; display: block; background-color: #eee;padding:5px 10px;
+border-radius: 5px;}
+.header ul li .cart{background-color: steelblue; color: #fff;}
+.header ul li .cart span{margin-left: 5px;}
+.container{display: flex; justify-content: center; flex-wrap: wrap;}
+.container .image {margin:30px 10px; position: relative; }
+.container .image img{width: 200px; height: 250px; background-position: center; background-size: cover;}
+.container .add-cart{display:block;width: 100%; background-color: #ddd; position: absolute;
+bottom:48px;left:0; text-align: center; padding:5px 10px; visibility: hidden;transition: all 0.1s; cursor: pointer;}
+.container .image:hover .add-cart{visibility: visible; }
+
+table{width: 800px; margin:100px auto; }
+table thead tr th{ text-align: left;}
+table tbody tr .bread{ width: 100px; height: 100px; border-radius: 50px;}
+
+table tbody tr td{padding-top: 10px;}
+table tbody tr .remove{width: 80px; height: 30px; background-color: hotpink; border:0; color:#fff; cursor: pointer; border-radius: 5px;}
